@@ -15,6 +15,8 @@ public class Employee {
     private String salaryGrade;
     @Getter
     private String department;
+    @Getter
+    private long department_id;
 
     public Employee(long id, String name, String jobName, String salaryGrade, String department) {
         this.id = id;
@@ -31,6 +33,4 @@ public class Employee {
         result += this.jobName;
         return result;
     }
-
-
 }
